@@ -117,7 +117,7 @@ img {
       -ms-flex: 1;
           flex: 1;
   background-image: url("../images/WhatsApp Image 2022-01-29 at 20.02.58.jpeg");
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
 }
 
@@ -126,5 +126,17 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+@media (max-width: 850px) {
+  .container-fluid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info {
+    margin: 100px 0;
+  }
 }
 /*# sourceMappingURL=base.css.map */
