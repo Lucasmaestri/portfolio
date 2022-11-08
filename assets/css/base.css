@@ -17,14 +17,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .logo {
   width: 120px;
   height: 30px;
-  background-color: #000;
   margin: 0 50px;
   border-radius: 20px;
+}
+
+img {
+  width: 150px;
 }
 
 .menu {
@@ -40,8 +47,84 @@
 .ham-menu {
   width: 30px;
   height: 3px;
-  background-color: #000;
+  background-color: white;
   margin: 3px 50px;
   border-radius: 5px;
+}
+
+.footer {
+  color: red;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  height: 100vh;
+}
+
+.bg .leftside {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #051a41;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg .leftside .info {
+  color: #fff;
+  padding-left: 40px;
+}
+
+.bg .leftside .name {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.bg .leftside .buttons {
+  margin-top: 30px;
+}
+
+.bg .leftside .buttons a {
+  background-color: #ff7b00;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #051a41;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.bg .leftside .buttons .whats {
+  background-color: #051a41;
+  border: 1px solid #ff7b00;
+  color: #ff7b00;
+}
+
+.bg .rightside {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-image: url("../images/WhatsApp Image 2022-01-29 at 20.02.58.jpeg");
+  background-size: 100% auto;
+  background-position: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 /*# sourceMappingURL=base.css.map */
