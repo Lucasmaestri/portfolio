@@ -95,6 +95,15 @@ img {
 
 .bg .leftside .buttons {
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bg .leftside .buttons a {
@@ -104,12 +113,20 @@ img {
   color: #051a41;
   font-weight: 500;
   border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 15px #131313;
+          box-shadow: 0px 0px 15px #131313;
+}
+
+.bg .leftside .buttons a:hover {
+  background-color: #be5c00;
+  color: #fff;
 }
 
 .bg .leftside .buttons .whats {
   background-color: #051a41;
   border: 1px solid #ff7b00;
   color: #ff7b00;
+  margin: 10px;
 }
 
 .bg .rightside {
@@ -128,15 +145,63 @@ footer {
   bottom: 0;
 }
 
+.rodape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rodape .copy p {
+  font-size: 12px;
+  color: #fff;
+  margin: 10px 50px;
+}
+
 @media (max-width: 850px) {
-  .container-fluid {
+  #header {
+    position: initial;
+    background-color: #051a41;
+  }
+  .bg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .info {
-    margin: 100px 0;
+  .leftside {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .rodape {
+    position: initial;
+  }
+  .rodape .copy p {
+    color: #051a41;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .bg .leftside .info .name {
+    font-size: 4rem;
+  }
+  .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bg .leftside .info .buttons a {
+    width: 240px;
   }
 }
 /*# sourceMappingURL=base.css.map */
