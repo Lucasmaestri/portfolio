@@ -52,6 +52,35 @@ img {
   border-radius: 5px;
 }
 
+.navbar-brand {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  margin-top: 0;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-brand li {
+  list-style: none;
+}
+
+.navbar-brand li a {
+  text-decoration: none;
+  color: #ff7b00;
+}
+
+.navbar-brand a:hover {
+  background-color: #ff7b00;
+}
+
 .footer {
   color: red;
   position: fixed;
@@ -167,6 +196,9 @@ footer {
   #header {
     position: initial;
     background-color: #051a41;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .bg {
     -webkit-box-orient: vertical;
